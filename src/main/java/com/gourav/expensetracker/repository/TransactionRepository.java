@@ -8,7 +8,7 @@ import java.util.List;
 
 public interface TransactionRepository {
 
-    List<Transaction> findAll(Integer userId, Integer categoryId, Integer transactionId) throws EtResourceNotFoundException;
+    List<Transaction> findAll(Integer userId, Integer categoryId) throws EtResourceNotFoundException;
 
     Transaction findById(Integer userId, Integer categoryId, Integer transactionId) throws EtResourceNotFoundException;
 
